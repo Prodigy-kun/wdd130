@@ -1,0 +1,13 @@
+.main_para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+#active {
+    background-color: white;
+    color: steelblue;
+}
+#boy {
+    font-weight: bolder;
+    color: red;
+    background-color: purple;
+}
