@@ -1,13 +1,44 @@
-.main_para {
+/* .main_para {
     font-size: 1.5em;
     line-height: 1.5em;
-}
-#active {
+} */
+/* #active {
     background-color: white;
     color: steelblue;
-}
-#boy {
+} */
+/* #boy {
     font-weight: bolder;
     color: red;
     background-color: purple;
+} */
+img {
+    width: 80%;
+    display: block;
+  margin:0 auto;
+}
+
+/* p{
+    width: 80%;
+} */
+a {
+    font-size: 1.5em;
+}
+* {
+    border: 2px solid blue; 
+}
+h1{
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+main p {
+    width: 80%;
+    /* text-align: center; */
+    margin: 50px auto;
+}
+footer{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
 }

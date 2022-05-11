@@ -1,0 +1,41 @@
+.hover:hover{
+    color: white;
+}
+h1{
+    font-size: 2em;
+    color: black;
+    font-weight: bolder;
+    
+
+}
+body{
+    background-color: rgb(251,164,204);
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+img{
+    width: 20%;
+}
+.quote{
+    font-family: serif;
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 200px;
+}
+footer{
+    color: black;
+    font-size: small;
+}
+ol{
+    font-size: smaller;
+    font-weight: bolder;
+    color: black;
+    width: 30%;
+    text-align: left;
+    margin: 0 auto;
+    line-height:30px ;
+}
+.bls{
+    font-weight: 500;
+}
