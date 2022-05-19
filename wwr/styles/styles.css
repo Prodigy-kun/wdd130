@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500&display=swap');
+/* #content{
+    max-width: 1600px;
+    margin: 0 auto;
+} */
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +11,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: #17242f;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -13,15 +19,24 @@ nav a {
 .button-box {
     text-align: center;
 }
+.button-box a {
+    color: #da9b0a;
+}
 main section {
     text-align: center;
 }
 
 #background{
     height: 725px;
+    background-color: #da9b0a;
+    margin-bottom: 100px;
 }
 body{
-    background-color:#bbcbdb ;
+    background-color:#bbcbdb;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;  
 }
 nav{
     background-color:  #da9b0a;
@@ -32,24 +47,33 @@ header{
 nav a:hover{
     background-color:black;
     color: white;
+    
 }
 .book, .join{
     background-color:  #17242f;
-    color: #da9b0a;
+    font-size: 18px;
     text-decoration: none;
-}
-#background{
-background-color: #da9b0a;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .msg{
 background-color: #17242f;
+line-height: 1.5em;
+padding: 35px;
+margin-top: 200px;
 }
 footer{
 background-color: #da9b0a;
+padding: 25px 50px;
+margin-top: 200px;
 }
 
 .home-title{
     color: #17242f;
+    font-family: Lobster;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: #17242f;
@@ -58,15 +82,25 @@ h4{
     background-color:black;
     color: white;
 }
-.msg h2, .msg p{
+
+.msg p{
+    font-size: .8em;
     color: #da9b0a;
+    padding-bottom: 15px;
 }
 footer h3{
     color: #17242f;
 }
-.logo, .icon {
+.logo {
     width: 80px;
+    border-radius: 50px;
 }
+.icon{
+    width: 80px;
+    padding-top: 10px;
+    /* padding-bottom: 5px; */
+}
+
 #hero-img{
     width: 100%;
 }
@@ -76,4 +110,30 @@ footer a{
 }
 footer h3 a:hover{
     text-decoration: underline;
+}
+button a {
+    color: #da9b0a;
+}
+
+.msg h2 {
+    font-family: Lobster; 
+    color: #da9b0a;  
+}
+h2 {
+    margin: 0;
+}
+#logo-link{
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.river-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #17242f;
+}
+main section img {
+    box-sizing: border-box;
 }
