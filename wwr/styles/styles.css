@@ -49,8 +49,17 @@ nav a:hover{
     color: white;
     
 }
-.book, .join{
+.book{
     background-color:  #17242f;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.join{
+    background-color: #da9b0a;
+    color: #17242f;
     font-size: 18px;
     text-decoration: none;
     padding: 15px 30px;
