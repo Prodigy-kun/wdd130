@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+#logo_image {
+    /* box-sizing: border-box; */
+    width: 100px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+main div img{
+    width: 150px;
+    margin: 0 auto;
+}
+header h1{
+    display: inline-block;
+    color: black;
+    font-family: sans-serif;
+    font-weight: lighter;
+    /* padding-bottom: 200px; */
+}
+main div {
+    background-color: gainsboro;
+    display: inline-block;
+    margin: 1%;
+
+    width: 300px;
+}
+/* main div:not(#general){
+} */
+.div1{
+    padding: 50px;
+}
+.div2{
+    padding: 100px 50px 50px 50px;
+}
+.div3{
+    padding: 50px;
+}
+header div{ 
+    background-color: #0076b6;
+    height: 70px;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+main h2{
+    font-family: sans-serif;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+main p {
+    margin-left: 100px;
+}
+.div1 a{
+    background-color: #0076b6;
+    display: block;
+    text-decoration: none;
+    padding: 4px 10px;
+    color: black;
+    border-radius: 2px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    width: 200px;
+}
+
+.div2 a{
+    background-color: orange;
+    text-decoration: none;
+    padding: 4px 10px;
+    color: black;
+    border-radius: 2px;
+    display: block;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    width: 200px;
+}
+.div3 a{
+    background-color: forestgreen;
+    text-decoration: none;
+    padding:4px 10px;
+    color: black;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    width: 200px;
+}
