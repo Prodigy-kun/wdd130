@@ -1,29 +1,29 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Atomic+Age&family=Quicksand&family=Roboto+Mono&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #01161E   ;
-  --secondary-color: #92DCE5 ;
+  --primary-color:  #92DCE5  ;
+  --secondary-color:#01161E  ;
   --accent1-color: #717C89;
   --accent2-color: #EDDFEF;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Atomic Age";
+  --paragraph-font: Abel , Quicksand, 'Roboto Mono', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #01161E;  /* headlines on a white background */ 
+  --headline-color-on-color: #01161e; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #01161e; /* paragraph text on a white background */ 
+  --paragraph-color-on-color:#01161e ; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #717C89  ;
+  --nav-link-color: #01161e ;
+  --nav-background-color: #717C89;
+  --nav-hover-link-color: #01161E;
+  --nav-hover-background-color: #EDDFEF;
 }
 
 
@@ -35,6 +35,9 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  background-color: #92DCE5;
+  color:#01161E;
+  font-weight: 700;
 }
 img {
   display: block;
