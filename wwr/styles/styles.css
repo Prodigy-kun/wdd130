@@ -215,6 +215,75 @@ footer{
     border-radius: 5px;
     /* grid-area: footer; */
     }
+
+
+/* Page 2/FAQ css starts here */
+
+#hero2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.faq-banner{
+    width: 100%;
+    margin-top: -320px;
+    grid-column: 1/4;
+    z-index: -1;
+}
+.search{
+    grid-column: 2/3;
+    grid-row: 2;
+    height: 20px;
+    border-radius: 6px;
+}
+.banner-msg{
+    font-size: 1.2em;
+    color: #bbcbdb;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+}
+.sum-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    /* justify-content: start; */
+}
+.summary{
+    padding: 10px;
+    background-color: #da9b0a;
+    border-radius: 6px;
+    box-shadow: 3px 3px;
+}
+.part{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.answer{
+    padding: 10px;
+    background-color: #efefef86;
+    border-radius: 10px;
+}
+.question{
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+}
+
+.comment{
+    width: 40%;
+    margin-left: 5px;
+}
+
+.input{
+    padding: 10px;
+    margin-top: -5;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
