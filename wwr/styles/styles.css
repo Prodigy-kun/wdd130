@@ -282,6 +282,10 @@ footer{
     margin-left: 5px;
     margin-bottom: 20px;
 }
+#main{
+    width: 95%;
+    margin:auto;
+}
 /* End of faq css */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
