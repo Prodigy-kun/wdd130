@@ -5,25 +5,25 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color:  #92DCE5  ;
-  --secondary-color:#01161E  ;
-  --accent1-color: #717C89;
-  --accent2-color: #EDDFEF;
+  --primary-color:  #010220;
+  --secondary-color:#03b4cc;
+  --accent1-color: #ffffff;
+  --accent2-color: #17242f;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Atomic Age";
   --paragraph-font: Abel , Quicksand, 'Roboto Mono', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #01161E;  /* headlines on a white background */ 
-  --headline-color-on-color: #01161e; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #01161e; /* paragraph text on a white background */ 
-  --paragraph-color-on-color:#01161e ; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #717C89  ;
-  --nav-link-color: #01161e ;
-  --nav-background-color: #717C89;
-  --nav-hover-link-color: #01161E;
-  --nav-hover-background-color: #EDDFEF;
+  --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: #03b4cc; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color:#03b4cc ; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #010220 ;
+  --nav-link-color: white ;
+  --nav-background-color: #010220;
+  --nav-hover-link-color: #17242f;
+  --nav-hover-background-color: white;
 }
 
 
@@ -35,7 +35,8 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
-  background-color: #92DCE5;
+  background-color: #03b4cc;
+  
   color:#01161E;
   font-weight: 700;
 }
