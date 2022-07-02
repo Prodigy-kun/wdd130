@@ -101,6 +101,7 @@ nav ,nav a{
 #banner h2{
     grid-area: 1/2/2/3;
     z-index: 1;
+    width: 50%;
     color: white;
     font-size: 3em;
     align-self: center;
