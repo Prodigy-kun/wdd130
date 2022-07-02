@@ -101,7 +101,7 @@ nav ,nav a{
 #banner h2{
     grid-area: 1/2/2/3;
     z-index: 1;
-    color: #010220;
+    color: white;
     font-size: 3em;
     align-self: center;
     justify-self: center;
@@ -112,7 +112,8 @@ nav ,nav a{
 #container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
     justify-content: space-around;
     align-content: space-around;
     color: #010220;
@@ -125,7 +126,7 @@ nav ,nav a{
     font-family: 'Atomic Age';
     letter-spacing: 2px;
     background-color: #03b4cc;
-    width: min-content;
+    width: 50%;
     padding: 10px;
     border-radius: 8px;
     transition: transform 0.8s;
@@ -141,6 +142,12 @@ nav ,nav a{
     text-decoration: none;
     color: #03b5ccda;
     font-family: Abel ,Quicksand, sans-serif;
+}
+.cat-img{
+    width: 100%;
+}
+.cat-msg{
+    width: 100%;
 }
 #foot{
     display: flex;
@@ -178,7 +185,7 @@ nav ,nav a{
 .categories:hover{
     transform: scale(1.2);
 }
-#foot a:hover, .cat:hover{
+#foot a:hover{
     background-color: white;
     padding: 6px;
     color: #17242f;
@@ -193,4 +200,7 @@ nav ,nav a{
 #banner h2:hover{
     transform: scale(1.2);
     color: white;
+}
+.cat:hover{
+    border: 2px solid white;
 }
