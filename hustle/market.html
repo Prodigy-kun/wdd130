@@ -4,149 +4,446 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/hustle.css">
     <title>HustleHub Homepage</title>
 </head>
 <body>
-    <nav>
-        <div id="top-bar">
-            <a href="index.html"><img src="images/hustlelg.png" alt="Hustle hub logo image" id="tb-img"></a>
-            <input type="text" class="tb-search">
-            <button type="button">search</button>
-            <h1 class="tb-h1">Hello, User.</h1>
-        </div>
-        <div id="sub-top">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="market.html" class="nav-link">Market</a>
-            <a href="contact-us.html" class="nav-link">Contact Us</a>
-            <a href="site-plan.html" class="nav-link">Site Plan</a>
-            <div class=" dropdown">
-                <button class="drpbtn">Saftey tips
-                    <i class="italz"></i>
-                </button>
-                <div class="dropdown-cnt">
-                    <p class="tips">Only make transactions with verified vendors.</p>
-                    <p class="tips">Do not meet up with any vendor after busines hours</p>
-                    <p class="tips">Only pay after services have been received and confirmed</p>
-                    <p class="tips">Report any form of suspicious activities</p>
+    <div class="total2">
+        <nav>
+            <div class="pg2-nav">
+                <div id="top-bar">
+                    <a href="index.html">
+                        <img src="images/hustlelg.png" alt="Hustle hub logo image" id="tb-img">
+                    </a>
+                    <div class="middle">
+                        <input type="text" class="tb-search">
+                        <button type="button">search</button>
+                    </div>
+                    <h1 class="tbh1">Hello, User.</h1>
                 </div>
-            </div>            
-        </div>
-    </nav>
-    <section class="categories">
-        <h2>
-            Category:Fashion
-        </h2>
-        <div class="mega-container">
-            <a href="#"><img src="images/pfp3.jpg" alt="profile picture"></a>
-            <p>Omotayo Promise</p>
-            <a href="#"><img src="images/verified.png" alt="badge"></a>
-            <div class="sub-container">
-                <div>
-                    <h3>Description:</h3>
-                    <p>
-                        Contact us for all your plain T-shirts, v-necks, and casual men shirt at affordable prices.
-                    </p>
+                <div id="sub-top">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="market.html" class="nav-link">Market</a>
+                    <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    <a href="site-plan.html" class="nav-link">Site Plan</a>
+                    <div class=" dropdown">
+                        <button class="drpbtn">Saftey tips
+                            <i class="italz"></i>
+                        </button>
+                        <div class="dropdown-cnt">
+                            <p class="tips">Only make transactions with verified vendors.</p>
+                            <p class="tips">Do not meet up with any vendor after busines hours</p>
+                            <p class="tips">Only pay after services have been received and confirmed</p>
+                            <p class="tips">Report any form of suspicious activities</p>
+                        </div>
+                    </div>            
                 </div>
-                <img src="images/1512.png" alt="T shirt" class="product-img">
-                <img src="images/vneck.jpg" alt="v neck" class="product-img">
-                <img src="images/download.png" alt="shirt" class="product-img">
             </div>
-            <h3>Tags:</h3>
-            <div>
-                <p class="tag">shirt</p>
-                <p class="tag">T-shirt</p>
-                <p class="tag">V-shirt</p>
-                <p class="tag">Wears</p>
-            </div>
-        </div>
-        <div class="mega-container">
-            <a href="#"><img src="images/pfp4.jpg" alt="profile picture"></a>
-            <p>Omotayo Promise</p>
-            <a href="#"><img src="images/verified.png" alt="badge"></a>
-            <div class="sub-container">
-                <div>
-                    <h3>Description:</h3>
-                    <p>
-                        For your different types of head wears such as facecaps, hats, benies, buckects hats at affordable prices, we are a sure plug for you.
-                    </p>
+        </nav>
+        <main id="main2">
+            <section class="categories2">
+                <h2 class='c-msg'>
+                    Category:Fashion
+                </h2>
+                <div class="mega-container">
+                    <div class="profile">
+                        <a href="#"><img src="images/pfp3.jpg" alt="profile picture" class="pfp"></a>
+                        <a href="#"><h3 class="pfn">Omotayo Promise</h3></a>
+                        <img src="images/verified.png" alt="badge" class="badge">
+                    </div>
+                    <div class="sub-container">
+                        <div class="msg-box">
+                            <h3>Description:</h3>
+                            <div class="d-box">
+                                <p>
+                                    Contact us for all your plain T-shirts, v-necks, and casual men shirt at affordable prices.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Images used to open the lightbox -->
+                        <div class="row">
+                            <div class="column">
+                            <img src="images/1512.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/vneck.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/download.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                        </div>
+                        
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/1512.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/vneck.jpg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/download.png" style="width:100%">
+                            </div>
+                        
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="images/1512.png" onclick="currentSlide(1)" alt="Nature">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/vneck.jpg" onclick="currentSlide(2)" alt="Snow">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/download.png" onclick="currentSlide(3)" alt="Mountains">
+                            </div>
+                        
+                            </div>
+                        <!-- </div>
+                        <img src="images/1512.png" alt="T shirt" class="product-img">
+                        <img src="images/vneck.jpg" alt="v neck" class="product-img">
+                        <img src="images/download.png" alt="shirt" class="product-img">
+                    </div> -->
+                    
+                    <div class="tags">
+                        <h3>Tags:</h3>
+                        <p class="tag">shirt</p>
+                        <p class="tag">T-shirt</p>
+                        <p class="tag">V-shirt</p>
+                        <p class="tag">Wears</p>
+                    </div>
                 </div>
-                <img src="images/plain-face-cap.png" alt="plainface cap" class="product-img">
-                <img src="images/bucket-hat.png" alt="bucket-hat" class="product-img">
-                <img src="images/beanie.jpg" alt="beanie" class="product-img">
-            </div>
-            <h3>Tags:</h3>
-            <div>
-                <p class="tag">Head wear</p>
-                <p class="tag">facecaps</p>
-                <p class="tag">benie</p>
-                <p class="tag">clothing</p>
-            </div>
-        </div>
-        <a href="#">Buy More</a>
-    </section>
+                <div class="mega-container">
+                    <div class="profile">
+                        <a href="#"><img src="images/pfp4.jpg" alt="profile picture" class="pfp"></a>
+                        <a href="#"><h3 class="pfn">Omotayo Promise</h3></a>
+                        <img src="images/verified.png" alt="badge" class="badge">
+                    </div>
+                    <div class="sub-container">
+                        <div class="msg-box">
+                            <h3>Description:</h3>
+                            <p>
+                                For your different types of head wears such as facecaps, hats, beanies, buckects hats at affordable prices, we are a sure plug for you.
+                            </p>
+                        </div>
+                        <!-- Images used to open the lightbox -->
+                        <div class="row">
+                            <div class="column">
+                            <img src="images/plain-face-cap.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/bucket-hat.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/beanie.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                        </div>
+                        
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/plain-face-cap.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/bucket-hat.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/beanie.jpg" style="width:100%">
+                            </div>
+                        
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="images/plain-face-cap.png" onclick="currentSlide(1)" alt="Nature">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/bucket-hat.png" onclick="currentSlide(2)" alt="Snow">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/beanie.jpg" onclick="currentSlide(3)" alt="Mountains">
+                            </div>
+                        
+                            </div>
+                        <!-- <img src="images/plain-face-cap.png" alt="plainface cap" class="product-img">
+                        <img src="images/bucket-hat.png" alt="bucket-hat" class="product-img">
+                        <img src="images/beanie.jpg" alt="beanie" class="product-img">
+                    </div> -->
+                    
+                    <div class="tags">
+                        <h3>Tags:</h3>
+                        <p class="tag">Head wear</p>
+                        <p class="tag">facecaps</p>
+                        <p class="tag">benie</p>
+                        <p class="tag">clothing</p>
+                    </div>
+                </div>
+                <a class="buy" href="#">Buy More</a>
+            </section>
 
-    <section class="categories">
-        <h2>
-            Category:Freelance
-        </h2>
-        <div class="mega-container">
-            <a href="#"><img src="#" alt="profile picture"></a>
-            <p>Omotayo Promise</p>
-            <a href="#"><img src="images/verified.png" alt="badge"></a>
-            <div class="sub-container">
-                <div>
-                    <h3>Description:</h3>
-                    <p>
-                        Contact us for your business cards, Website UI design, custom birthday card, posters etc all at affordable prices. Check out some of our work.
-                    </p>
+            <section class="categories3">
+                <h2 class="c-msg">
+                    Category:Freelance
+                </h2>
+                <div class="mega-container">
+                    <div class="profile">
+                        <a href="#"><img src="images/pfp6.jpg" alt="profile picture" class="pfp"></a>
+                        <a href="#"><h3 class="pfn">Omotayo Promise</h3></a>
+                        <img src="images/verified.png" alt="badge" class="badge">
+                    </div>
+                    <div class="sub-container">
+                        <div class="msg-box">
+                            <h3>Description:</h3>
+                            <p>
+                                Contact us for your business cards, Website UI design, custom birthday card, posters etc all at affordable prices. Check out some of our work.
+                            </p>
+                        </div>
+                        <!-- Images used to open the lightbox -->
+
+                        <div class="row">
+                            <div class="column">
+                            <img src="images/bcard1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/bcard1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/bcard3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                        </div>
+                        
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/bcard1.jpg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/bcard1.jpg" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/bcard3.jpg" style="width:100%">
+                            </div>
+                        
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="images/bcard1.jpg" onclick="currentSlide(1)" alt="Nature">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/bcard1.jpg" onclick="currentSlide(2)" alt="Snow">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/bcard3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                            </div>
+                        
+                            </div>
+                        <!-- <img src="images/bcard1.jpg" alt="business card" class="product-img">
+                        <img src="images/bcard1.jpg" alt="business card" class="product-img">
+                        <img src="images/bcard3.jpg" alt="business card" class="product-img"> -->
+                    </div>
+                    
+                    <div class="tags">
+                        <h3>Tags:</h3>
+                        <p class="tag">Business cards</p>
+                        <p class="tag">Graphics design</p>
+                        <p class="tag">UI</p>
+                        <p class="tag">Freelance</p>
+                    </div>  
                 </div>
-                <img src="images/bcard1.jpg" alt="business card" class="product-img">
-                <img src="images/bcard2.jpg" alt="business card" class="product-img">
-                <img src="images/bcard3.jpg" alt="business card" class="product-img">
-            </div>
-            <h3>Tags:</h3>
-            <div>
-                <p class="tag">Business cards</p>
-                <p class="tag">Graphics design</p>
-                <p class="tag">UI</p>
-                <p class="tag">Freelance</p>
-            </div>  
-        </div>
-        <div class="mega-container">
-            <a href="#"><img src="#" alt="profile picture"></a>
-            <p>Omotayo Promise</p>
-            <a href="#"><img src="images/verified.png" alt="badge"></a>
-            <div class="sub-container">
-                <div>
-                    <h3>Description:</h3>
-                    <p>
-                        We build simple affordable websites for small business and companies, here are some of our work.
-                    </p>
+                <div class="mega-container">
+                    <div class="profile">
+                        <a href="#"><img src="images/pfp7.png" alt="profile picture" class="pfp"></a>
+                        <a href="#"><h3 class="pfn">Omotayo Promise</h3></a>
+                        <img src="images/verified.png" alt="badge" class="badge">
+                    </div>
+                    <div class="sub-container">
+                        <div class="msg-box">
+                            <h3>Description:</h3>
+                            <p>
+                                We build simple affordable websites for small business and companies, here are some of our work.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                            <img src="images/wpg1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/wpg2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                            <img src="images/wpg1.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                        </div>
+                        
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/wpg1.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/wpg2.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/wpg1.png" style="width:100%">
+                            </div>
+                        
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="images/wpg1.png" onclick="currentSlide(1)" alt="Nature">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/wpg2.png" onclick="currentSlide(2)" alt="Snow">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="images/wpg1.png" onclick="currentSlide(3)" alt="Mountains">
+                            </div>
+                        
+                            </div>
+                        <img src="images/wpg1.png" alt="webpage" class="product-img">
+                        <img src="images/wpg2.png" alt="webpage" class="product-img">
+                        <img src="images/wpg1.png" alt="webpage" class="product-img">
+                    </div>
+                    
+                    <div class="tags">
+                        <h3>Tags:</h3>
+                        <p class="tag">Developer</p>
+                        <p class="tag">web-dev</p>
+                        <p class="tag">UI</p>
+                        <p class="tag">Freelance</p>
+                    </div>  
                 </div>
-                <img src="images/wpg1.png" alt="webpage" class="product-img">
-                <img src="images/wpg2.png" alt="webpage" class="product-img">
-                <img src="images/wpg1.png" alt="webpage" class="product-img">
-            </div>
-            <h3>Tags:</h3>
-            <div>
-                <p class="tag">Developer</p>
-                <p class="tag">web-dev</p>
-                <p class="tag">UI</p>
-                <p class="tag">Freelance</p>
-            </div>  
-        </div>
-        <a href="#">Buy More</a>
-    </section>
-    <footer id="foot">
-        <h3>Hustle Hub &copy; 2022 - Promise Omotayo</h3>
-            <h3><a href="site-plan.html">Site Plan</a></h3>
-            <h3><a href="market.html">Market</a></h3>
-            <h3><a href="contact-us.html">Contact Us</a></h3>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
-                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo"></a>
-                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
-            </div> 
-    </footer>
+                <a class="buy" href="#">Buy More</a>
+            </section>
+        </main>
+    
+        <footer id="foot">
+            <h3>Hustle Hub &copy; 2022 - Promise Omotayo</h3>
+                <h3><a href="site-plan.html">Site Plan</a></h3>
+                <h3><a href="market.html">Market</a></h3>
+                <h3><a href="contact-us.html">Contact Us</a></h3>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
+                </div> 
+        </footer>
+    </div>
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
 </body>
 </html>
