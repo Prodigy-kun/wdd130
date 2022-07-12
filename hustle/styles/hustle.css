@@ -279,9 +279,9 @@ nav ,nav a{
     
 }
 .sub-container{
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 97%;
     margin: 0 auto;
     color: #010220;
@@ -291,13 +291,14 @@ nav ,nav a{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 .msg-box{
+    width: 25%;
     border-radius: 10px;
     padding: 10px;
     background-color: aliceblue;
     color: #010220;
 }
 .product-img{
-    width: 100%;
+    /* width: 100%; */
     place-self: center center;
     background-color: #010220;
     border-radius: 10px;
@@ -343,6 +344,10 @@ nav ,nav a{
 }
 
 
+.column{
+    margin-left:20px;
+    margin-right: 20px;
+}
 .row > .column {
     padding: 0 8px;
   }
