@@ -78,6 +78,7 @@ body{
     color: black;
 }
 nav ,nav a{
+    z-index: 1;
     color: #03b4cc;
 }
 .nav-link{
@@ -473,3 +474,148 @@ nav ,nav a{
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+
+  /* contact us page css starts here */
+
+#pg-3{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#c-top{
+    background-color: #010220;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 10%) 12% 16% 15% 1fr;
+    justify-content: space-around;
+    padding: 3px;
+    opacity: 0.8;
+}
+
+#c-top  .nav-link {
+    place-self: center center;
+    color: #03b4cc;
+    font-family: 'Atomic Age';
+    font-size: 1.5em;
+}
+#c-top  .dropdown{
+    place-self: center right;
+}
+#c-top #tb-img{
+    margin-left: 7px;
+    border: 4px solid #03b4cc;
+}
+#pg-3 #Hero{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#pg-3 #bannerimg{
+    width: 100%;
+    grid-area: 1/1/2/4;
+    z-index: -1;
+    opacity: 0.85;
+}
+#Hero h1{
+    grid-area: 1/2/2/3;
+    z-index: 1;
+    color: #010220;
+    font-size: 3em;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    font-family: 'Atomic Age';
+    transition: transform 0.5s;
+}
+.content-box{
+    background-color: #01022091;
+    width: 90%;
+    margin: 100px auto;
+    border-radius: 10px;
+    border: 2px solid #010220;
+}
+#form{
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#form li{
+    padding: 50px;
+}
+label{
+    font-family: 'Atomic Age';
+    font-weight: bold;
+}
+input{
+    width: 50%;
+    padding: 10px;
+    font-family:Abel ,Quicksand, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid #010220;
+}
+textarea{
+    height: 250px;
+    width: 40%;
+    border-radius: 4px;
+    border: 2px solid #010220;
+}
+.bottom{
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.bottom button{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    font-family:Abel ,Quicksand, sans-serif ;
+    font-weight: bold;
+    font-size: 1.12em;
+    border-radius: 4px;
+    border: 2px solid #010220;
+}
+.bottom h2{
+    font-family:'Atomic Age';
+}
+
+
+@media only screen and (max-width: 1000px) {
+ #sub-top{
+    display: flex;
+    flex-direction: column;
+    border: none;
+ }
+ #bannerimg{
+    margin-top: 0;
+ }
+ #top-bar{
+    display: block;
+    border: none;
+ }
+ .middle, #top-bar h1{
+    display: none;
+ }
+ #banner h2{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+ }
+ .cat-msg{
+    width: 100%;
+    font-size: 0.9em;
+ }
+ .cat{
+    font-size: 0.8em;
+    padding: 2px;
+ }
+ #container{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    width: 100%;
+ }
+ .categories{
+    justify-self: center;
+ }
+
+}
