@@ -534,12 +534,12 @@ nav ,nav a{
     border-radius: 10px;
     border: 2px solid #010220;
 }
-#form{
+.form{
     width: 95%;
     margin: 0 auto;
     box-sizing: border-box;
 }
-#form li{
+.form li{
     padding: 50px;
 }
 label{
@@ -577,7 +577,19 @@ textarea{
 .bottom h2{
     font-family:'Atomic Age';
 }
-
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+    }
+.moveDown {
+    margin-top: 3em;
+}
 
 @media only screen and (max-width: 1000px) {
  #sub-top{
