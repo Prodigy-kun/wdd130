@@ -579,11 +579,12 @@ textarea{
 }
 #feedback {
     background-color: antiquewhite;
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    bottom: 0;
     left: 0;
     right: 0;
-    padding: .5em;
+    padding: 2em;
+    margin: auto 0;
     /* make this element invisible until we are ready for it */
     display: none;       
     }
